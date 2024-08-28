@@ -34,6 +34,7 @@ const PaginatedTable = () => {
         setData(allData.slice(startIndex, endIndex));
       } catch (err) {
         setError(err);
+        alert("failed to fetch data"); 
       } finally {
         setLoading(false);
       }
